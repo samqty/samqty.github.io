@@ -1,0 +1,59 @@
+<html>
+
+<head>
+  <title>Postman tutorial -> testing web apis</title>
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+  <link rel="stylesheet" href="./assets/css/bootstrap.css" media="screen">
+ 
+</head>
+
+<body>
+    
+    <div class="navbar navbar-expand-lg fixed-top navbar-dark bg-primary">
+        <div class="container">
+          <a href="../" class="navbar-brand">Postman Tutorial -> Web API tutorial</a>
+        </div>
+    </div>
+
+    <div class="container" style="margin-top:60px;">
+        <h2>Step 2: Issue Get Request</h2>
+    </div>
+   
+    <div class="container">
+        <p>
+                Let’s start with the most common http web API request, the GET request. By default, when you open up postman you should see a blank request tab open like below:
+        </p>
+        <img src="./assets/images/image007.png">
+        
+        <ol>
+            <li>For our manual testing we will spend most of our time on the address area of the request, make sure “GET” is selected as the method. 
+                    <img src="./assets/images/image009.png">
+            </li>
+            <li>Enter this address to the request URL:
+                    https://my-json-server.typicode.com/samqty/postmantutorialapi/posts</li>
+            <li>Then click on the “Send” button</li>
+            <li>You should get a screen like the one below, as you can see there is a wealth of information about the web api end point you can get here: 
+                    <img src="./assets/images/image011.png">
+                <ol>
+                    <li>The body shows a well formatted JSON response</li>
+                    <li>You can also see the HTTP Response code returned</li>
+                    <li>	And How long the request took</li>
+                </ol>
+            </li>
+        </ol>
+    </div>
+
+
+    <div class="container" >
+            <div class="progress" style="margin:10px;">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%"></div>
+            </div>
+    </div>
+    <div class="container">
+        <a href="index.2.html" class="btn btn-primary" >Previous </a>
+        <span></span>
+        <a href="index.3.html" class="btn btn-primary"> Next </a>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,77 @@
+<html>
+
+<head>
+  <title>Postman tutorial -> testing web apis</title>
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+  <link rel="stylesheet" href="./assets/css/bootstrap.css" media="screen">
+ 
+</head>
+
+<body>
+    
+    <div class="navbar navbar-expand-lg fixed-top navbar-dark bg-primary">
+        <div class="container">
+          <a href="../" class="navbar-brand">Postman Tutorial -> Web API tutorial</a>
+        </div>
+    </div>
+
+    <div class="container" style="margin-top:60px;">
+        <h2>Step 3: Saving Requests</h2>
+    </div>
+   
+    <div class="container">
+        <p>
+                Usually, in a real web api, the requests might not be as simple as the one in the previous step. And might end up requiring you to carefully craft a URL that contains numerous parameters. For such cases postman allow you to save your requests in an organized manner so that they can be easily accessed and run on demand. To demonstrate let’s introduce a parameter to our previous request.
+        </p>
+       
+        
+       <ol>
+           <li>There are two ways to do this, Click on the “Params” button on the address bar 
+                <img src="./assets/images/image013.png">
+           </li>
+           <li>This action will open up a panel containing a table with key and value columns, in the key column add “author” and in the value coluemn add “john”. Essentially what this tells the apis is to get the posts authored by “john”. </li>
+           <li>Let’s add another parameter to add more filters. Click on the “New key” box right below the author and enter “catetory” and in the corresponding “value” box enter “fun”. Your screen should look like the one below
+                <img src="./assets/images/image015.png">
+           </li>
+           <li>If you observer the address bar, you see these parameters are appended to the original address. Basically in Http Get request, this is is how additional information is sent to the server. What this also means is that, you can also go in there and type your parameters directly on the address bar. Go ahead and click on “Send”, you should see the result as below.
+               <br>
+                <img src="./assets/images/image017.png">
+           </li>
+           <li>You can also use the parameter UI to temporarly turn on or off each individual parameter, with out the need to delete and type every thing, try unchecking the category row and run send the request. 
+<br>
+<img src="./assets/images/image019.png">
+<br>
+you should see the response like this 
+<br>
+<img src="./assets/images/image021.png">
+</li>
+           </li>
+
+           <li>
+                You can also include some documentation by adding description for each parameter. So once you are done and happy with your request definition, you can hit the save button to save the request for another time. Click on the save button, and that opens up a modal window where you can sepecifiy some details on the request. 
+                <br>
+                <img src="./assets/images/image023.png">
+                <ol>
+                        <li>Specify the request name as “Get Post Test”</li>
+                        <li>Click on the “+Create Collection” button  and create a collection named “Manual Test” (more detail about it in the coming sections)</li>
+                        <li>And Click on save button to save the request.</li>
+                        
+                </ol>
+           </li>
+           <li>
+                Once it is save, it will be available to run promptly in the left side panel of the user interface.
+                <img src="./assets/images/image025.png">
+           </li>
+       </ol>
+            
+           
+    </div>
+
+
+    <div class="container">
+        <a href="index.2.html" class="btn btn-primary">Previous </a>
+        <a href="index.4.html" class="btn btn-primary">Next </a>
+    </div>
+</body>
+
+</html>

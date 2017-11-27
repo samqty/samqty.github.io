@@ -1,0 +1,58 @@
+<html>
+
+<head>
+  <title>Postman tutorial -> testing web apis</title>
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+  <link rel="stylesheet" href="./assets/css/bootstrap.css" media="screen">
+ 
+</head>
+
+<body>
+    
+    <div class="navbar navbar-expand-lg fixed-top navbar-dark bg-primary">
+        <div class="container">
+          <a href="../" class="navbar-brand">Postman Tutorial -> Web API tutorial</a>
+        </div>
+    </div>
+
+    <div class="container" style="margin-top:60px;">
+        <h2>Step 4: Issue Post Request</h2>
+    </div>
+   
+    <div class="container">
+        <p>Another common http request that is used to create stuff on the server is “Http Post”, Postman allows you to issue a post request with different content types, in this tutorial we are going to stick to json though. </p>
+        <ol>
+            <li>To continue from where we left off, click on the “+” at the top of the window to create a new tab on the post man window, Postman does allow you to work with multiple requests at the same time, similar to how latest browsers behave.</li>
+                    <li>Change the http method from the default GET to POST on the address bar and enter the address https://my-json-server.typicode.com/samqty/postmantutorialapi/posts </li>
+                            <li>Click on the “Body” tab below the address. Postman allows you to specify the body in different format, to simulate an actual submission</li>
+                            <ol>
+            <li>Form-data</li>
+            <li>X-ww-form-urlencoded</li>
+            <li>Raw</li>
+            <li>Binary</li>
+        </ol></li>
+        <li>Click on “raw”, this option allows you to enter a json payload directly <img src="./assets/images/image027.png"> </li>
+        <li>After selecting “raw” click on the down arrow on the link named “Text” and pick JSON(application/json) and type in this text:
+            <br>{
+                <br>"id": 5,
+                <br>"title": "Post 15",
+                <br>"author": "Smith",
+                <br>"category": "fun"
+                <br>}</li>
+            <li>	Click on send to submit this json data</li>
+            <li>	If everything worked you should get a response that looks like this
+                    <img src="./assets/images/image029.png">          </li>
+            <li>Note: The Http Status code “201 Created”. Go ahead and save this request to the “Manual Test” collection by clicking on the “Save” button.</li>
+        </ol>    
+           
+    </div>
+
+
+    
+    <div class="container">
+        <a href="index.3.html" class="btn btn-primary">Previous </a>
+        <a href="index.5.html" class="btn btn-primary">Next </a>
+    </div>
+</body>
+
+</html>
